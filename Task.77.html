@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jQuery attr() Method</title>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+	<center>
+		<h1 style="color:green;">
+			GeeksForGeeks
+		</h1>
+		<h2> jQuery attr() Method</h2>
+		<h3 style="color:lightgreen;">
+		</h3>
+		<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20190221153831/1132.png"
+			alt="" width="120" height="300"
+			class="alignnone size-medium wp-image-915678" />
+		<br>
+		<br>
+		<button>Click</button>
+		<script>
+			$(document).ready(function () {
+				$("button").click(function () {
+					$("img").attr("width", function (n, v) {
+						return v - 50;
+					});
+				});
+			});
+		</script>
+	</center>
+</body>
+
+</html>

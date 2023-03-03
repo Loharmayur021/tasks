@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$("#setBtnID").click(function () {
+				$("input:text").val("Hello World!");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h2 style="color:rgb(12, 97, 177)">
+		Welcome
+	</h2>
+	
+	<b>JQuery val() Method</b>
+
+	<p>User Text: <input type="text"
+		name="userInput">
+	</p>
+
+	<button id="setBtnID">
+		Set the value of the
+		input field
+	</button>
+</body>
+
+</html>
