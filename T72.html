@@ -1,0 +1,40 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            JQuery | Change the text of a span element
+        </title>
+          
+        <script src = 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+    </head> 
+      
+    <body style = "text-align:center;" id = "body"> 
+          
+        <h1 style = "color:rgb(49, 65, 49);" > 
+            task 72
+        </h1> 
+          
+        <span id="GFG_Span" style = "font-size: 15px; font-weight: bold;"> 
+            Hiii........ 
+        </span>
+          
+        <br><br>
+          
+        <button> 
+            Change
+        </button>
+          
+        <p id = "GFG_DOWN" style = 
+            "color:rgb(255, 236, 109); font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+            $('button').on('click', function() {
+                $('#GFG_Span').text("New Span text content");
+                $('#GFG_DOWN').text("Span content changed");
+            });     
+        </script> 
+    </body> 
+</html> 

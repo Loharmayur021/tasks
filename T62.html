@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+</head>
+  
+<body>
+    <div class="button">
+        <button id="bt1">Hiii :)</button>
+    </div>
+    <style>
+        button{
+            background-color: rgba(0, 226, 251, 0.461);
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+  
+    <script type="text/javascript">
+        $(document).ready( ()=>{
+  
+            // Event listener to recognise click
+            // Animations will occur sequentially
+            // and will be added to queue
+            $('#bt1').on('click', () => {
+                $('#bt1').animate({fontSize : '40px'}, {duration : 1000})
+                .animate({width : '300px'}, {duration : 1000})
+                .animate({height : '300px' }, {duration : 1000});
+            });
+        });
+    </script>
+</body>
+  
+</html>
