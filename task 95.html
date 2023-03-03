@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head>
+    <title>
+       Getting all the CSS styles
+       of an element using jQuery
+    </title>
+</head>
+ 
+<body style="text-align:center;">
+    <h1>Task 95</h1>
+    <p id="GFG_UP"></p>
+ 
+ 
+    <button onclick="GFG_Fun();"> Click Here </button>
+    <p id="GFG_DOWN"></p>
+ 
+ 
+    <script>
+    var up = document.getElementById('GFG_UP');
+    var down = document.getElementById('GFG_DOWN');
+    up.innerHTML = "Click on the button "
+        + "to get the all CSS styles "
+        + "associated with the element.";
+ 
+    function GFG_Fun() {
+        var ar = document.defaultView.getComputedStyle(up, null);
+        var str = "";
+        for(var key in ar) {
+            str = str + key + ': ' + ar[key] + "-";
+        }
+        down.innerHTML = str;
+    }
+    </script>
+</body>
+ 
+</html>

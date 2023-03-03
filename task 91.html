@@ -1,0 +1,50 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            How to Add and Remove multiple classes
+        </title>
+          
+        <script src =
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+          
+        <style>
+            .color {
+                color: red;
+            }
+            .fontWeight {
+                font-weight: bold;
+            }
+        </style>
+    </head> 
+      
+    <body style = "text-align:center;"> 
+          
+        <h1 style = "color:green;" > 
+            Task 91 
+        </h1>
+          
+        <p id = "GFG_UP" style = "font-size: 19px;">
+        </p>
+          
+        <button onClick = "GFG_Fun()">
+            click here
+        </button>
+          
+        <p id = "GFG_DOWN" style = 
+            "color: green; font-size: 24px; font-weight: bold;">
+        </p>
+          
+        <script>
+            $('#GFG_UP').text("Click on button to add multiple"
+                + " classes to this element");
+              
+            function GFG_Fun() {
+                $("#GFG_UP").addClass("color fontWeight");
+                $('#GFG_DOWN').text("color and fontWeight,"
+                        + " Both classes added");
+            }
+        </script> 
+    </body> 
+</html>      

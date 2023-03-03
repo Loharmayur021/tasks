@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>jQuery get CSS value</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btn").click(function(){
+        alert("Background color = " + $("p").css("background-color"));
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="btn">Get Val</button>
+  <p style="background-color:blue">Get CSS style</p>
+</body>
+</html>

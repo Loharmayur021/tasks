@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>
+        How to remove all CSS classes using jQuery?
+    </title>
+  
+    <style>
+        .GFG1 {
+            color: rgb(229, 31, 31);
+        }
+  
+        .GFG2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+  
+    <!-- Import jQuery cdn library -->
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").removeClass();
+            });
+        });
+    </script>
+</head>
+  
+<body style="text-align: center;">
+    <h1 style="color: rgb(23, 204, 217);">
+        Task 93
+    </h1>
+  
+    <h3>
+        How to remove all CSS classes at once using jQuery?
+    </h3>
+  
+    <p class="GFG1 GFG2">
+        Computer Science Portal
+    </p>
+  
+    <button>Click Here!</button>
+</body>
+  
+</html>

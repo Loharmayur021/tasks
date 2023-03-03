@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Set a DIV width</title>
+<style>
+    .box{
+        float: left;
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".set-width-btn").click(function(){
+        var newWidth = $(".input-width").val();
+        $(".box").width(newWidth);
+    });
+});
+</script>
+</head> 
+<body>
+    <form>
+        <input type="text" class="input-width">
+        <button type="button" class="set-width-btn">Set Width</button>
+        <p>Enter the value in input box either as number (e.g. 100, 200) or combination of number and unit (e.g. 100%, 200px, 50em, auto) and click the "Set Width" button.</p>
+    </form>
+    <br>
+    <div class="box">This is simple DIV box</div>
+</body>
+</html>
