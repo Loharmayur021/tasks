@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	
+	<script>
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				$("input").blur();
+				$("p").html("This is blur method that is used!!!");
+			});
+		});
+	</script>
+</head>
+	
+<body>
+	<!--enter value and click on the button -->
+	Enter Value:
+	<input type="text">
+	<br><br>
+	
+	<button id="btn">start blur event!!!</button>
+	<p style="color:green"></p>
+</body>
+	
+</html>

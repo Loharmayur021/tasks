@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>slideToggle functionality</title>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+	<h2>Welcome To GFG</h2>
+
+	<button id="slide-toggle">toggle</button>
+
+	<h1 id="textbox">geeksforgeeks.org</h1>
+
+	<script>
+		$("#slide-toggle").on("click", function () {
+			$("#textbox").slideToggle();
+		});
+	</script>
+</body>
+
+</html>

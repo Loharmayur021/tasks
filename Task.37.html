@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to run code on mouseleave
+		event in jQuery ?
+	</title>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$(".main").mouseleave(function() {
+				$(".main").css({
+					background: "green",
+					color: "white"
+				});
+			});
+			$(".main").mouseenter(function() {
+				$(".main").css({
+					background: "none",
+					color: "black"
+				});
+			});
+		});
+	</script>
+
+	<style>
+		.main {
+			width: 300px;
+			height: 200px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<div class="main">
+			<h1>GeeksforGeeks</h1>
+
+			<h3>
+				How to run code on mouseleave
+				event in jQuery ?
+			</h3>
+		</div>
+	</center>
+</body>
+
+</html>

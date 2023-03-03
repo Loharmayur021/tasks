@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		span {
+			display: none;
+		}
+
+		body {
+			width: 35%;
+			height: 50px;
+			border: 2px solid green;
+			padding: 35px;
+			margin: 10px;
+		}
+	</style>
+	<script src=
+"https://code.jquery.com/jquery-1.10.2.js">
+	</script>
+</head>
+
+<body>
+	<!-- this paragraph element get focused -->
+	<p>
+		<input type="text"> <span>focused</span>
+	</p>
+
+	<!-- jQuery code to show working of this method -->
+	<script>
+		$("input").focus(function () {
+			$(this).next("span").css("display", "inline");
+		});
+	</script>
+</body>
+
+</html>
